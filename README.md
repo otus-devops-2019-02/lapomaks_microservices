@@ -19,3 +19,9 @@ lapomaks microservices repository
   docker stop
   docker rm
   docker rmi
+
+ДЗ: Docker-2
+1. В GCP создан новый проект docker-239918 и локальная утилита gcloud настроена для работы с ним
+2. На локальную машину установлен docker-machine и с его помощью в GCP создана ВМ с docker engine
+3. Написаны и выполнены скрипты для создания docker image с установленым приложением reddit и настроеной БД Mongo
+4. Созданный образ залит в docker hub
