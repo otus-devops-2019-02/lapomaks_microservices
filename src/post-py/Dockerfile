@@ -3,7 +3,7 @@ FROM python:3.6.0-alpine
 WORKDIR /app
 ADD . /app
 
-RUN apk add --no-cache build-base gcc
+RUN apk update && apk add --no-cache musl-dev gcc
 RUN pip install -U -r /app/requirements.txt
 
 ENV POST_DATABASE_HOST post_db
