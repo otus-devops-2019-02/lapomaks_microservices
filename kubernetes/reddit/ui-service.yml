@@ -4,13 +4,13 @@ metadata:
   name: ui
   labels:
     app: reddit
-    component: ui 
+    component: ui
 spec:
-  type: NodePort 
+  type: NodePort
   ports:
   - port: 9292
     protocol: TCP
     targetPort: 9292
   selector:
     app: reddit
-    component: ui 
+    component: ui
